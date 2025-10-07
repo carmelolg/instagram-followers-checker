@@ -10,10 +10,10 @@ followers_path = os.path.join(base_dir, 'followers_1.json')
 mutual = get_mutual_followers(following_path, followers_path)
 unfollowers = get_unfollowers(following_path, followers_path)
 
-print("Mutual followers:")
-for item in mutual:
-    print(item)
+print("Mutual followers: ", len(mutual))
+#for item in mutual:
+#    print(item)
 
-print("\nUnfollowers:")
+print("\nUnfollowers: ", len(unfollowers))
 for item in unfollowers:
     print(item)
